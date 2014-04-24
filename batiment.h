@@ -2,9 +2,12 @@ typedef struct Batiment
 {
 	int largeur;
 	int longueur;
-	int pollution;
+	int poll;
 	int action;
 	int detente;
-	int travail;
+	int emploi;
 	int pop;
 } Batiment;
+
+Batiment* nouveau();
+void new_house(Batiment* b);

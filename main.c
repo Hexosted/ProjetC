@@ -1,16 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "batiment.h"
+#include "statistiques.h"
 
 int main(int argc, char* argv[])
 {
-	//printf("Hello");
-	
-	Batiment maison;
-	
-	maison.largeur=14;
-	
-	printf("%d\n", maison.largeur);
+	Stats* s=creer_stats();
+	printf("%d\n", s->chomage);
+
+	Batiment* bat=nouveau();
+	printf("%d\n", bat->longueur);
+	new_house(bat);
+	printf("%d\n", bat->longueur);
 	
 	return 0;
 }
