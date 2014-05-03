@@ -1,8 +1,11 @@
-prog : batiment.o main.o statistiques.o
-		gcc batiment.o statistiques.o main.o -o prog
+prog : residence.o commerce.o main.o statistiques.o
+		gcc residence.o commerce.o statistiques.o main.o -o prog
 
-batiment.o : batiment.c
-		gcc -c batiment.c
+residence.o : residence.c
+		gcc -c residence.c
+		
+commerce.o : commerce.c
+		gcc -c commerce.c
 		
 main.o : main.c
 		gcc -c main.c
